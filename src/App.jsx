@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
 import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
@@ -10,13 +10,21 @@ import SignUp from './components/SignUp';
 import Dashboard from './components/Dashboard';
 import TermsOfService from './components/TermsOfService';
 import MITLicense from './components/MITLicense';
+import FoodOrder from './components/FoodOrder';
+import Favourite from './components/Favourite';
+import Message from './components/Message';
+import OrderHistory from './components/OrderHistory';
+import Bills from './components/Bills';
+import Settings from './components/Settings';
 
 function App() {
+
   return (
-      <Router>
-        <div className="app-container">
-          <Header />
-          <div className="main-content">
+    <Router>
+      <div className="app-container">
+       
+        <div className="main-content">
+          <main className="dashboard__main">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -25,12 +33,19 @@ function App() {
               <Route path="/signup" element={<SignUp />} />
               <Route path="/terms" element={<TermsOfService />} />
               <Route path="/license" element={<MITLicense />} />
+              <Route path="/dashboard/*" element={<Dashboard />} />
+              <Route path="/food-order" element={<FoodOrder />} />
+              <Route path="/favourite" element={<Favourite />} />
+              <Route path="/message" element={<Message />} />
+              <Route path="/order-history" element={<OrderHistory />} />
+              <Route path="/bills" element={<Bills />} />
+              <Route path="/settings" element={<Settings />} />
             </Routes>
-          </div>
-          <Footer />
+          </main>
         </div>
-      </Router>
-    // <Dashboard/>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

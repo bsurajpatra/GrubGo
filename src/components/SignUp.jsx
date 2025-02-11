@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ function SignUp() {
 
   return (
     <section className="signup section container" style={{ marginTop: "80px" }}>
+      <Header />
       <div className="signup__content">
         <div className="signup__logo-container">
           <img src="/logo.png" alt="Logo" className="signup__logo" /> {/* Add logo */}

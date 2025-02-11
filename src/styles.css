@@ -903,20 +903,19 @@ html, body {
 
 .dashboard__sidebar {
   width: 200px;
-  background-color: #f4f4f4;
+  background-color: white;
   padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.app-name {
+.dashboard__sidebar h2.app-name {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .dashboard__sidebar ul {
-  list-style-type: none;
   padding: 0;
 }
 
@@ -925,16 +924,24 @@ html, body {
 }
 
 .dashboard__sidebar a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   text-decoration: none;
   color: black;
-  background-color: #49f84f;
-  padding: 10px;
+  background-color: white;
+  padding: 8px 12px;
   border-radius: 5px;
-  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 .dashboard__sidebar a:hover {
-  color: #343734;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dashboard__sidebar a span {
+  margin-left: 8px; /* Adjust spacing between icon and text */
 }
 
 .dashboard__main {
@@ -944,79 +951,255 @@ html, body {
 
 .terms-container {
   padding: 20px;
-  background-color: #ffffff; /* White background for clarity */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin: 20px; /* Margin around the container */
-  color: #333; /* Dark text color for readability */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  color: #333;
 }
 
 h1, h2, h3 {
-  color: #4CAF50; /* Use the primary color for headings */
+  color: #4CAF50;
 }
 
 ul {
-  margin-left: 20px; /* Indent list items */
+  margin-left: 20px;
 }
 
 .mit-license-container {
   padding: 20px;
-  background-color: #ffffff; /* White background for clarity */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin: 20px; /* Margin around the container */
-  color: #333; /* Dark text color for readability */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  color: #333;
 }
 
 h1 {
-  color: #4CAF50; /* Use the primary color for headings */
+  color: #4CAF50;
 }
 
 /* Signup Form Styles */
 .signup-container {
-  max-width: 400px; /* Set a maximum width for the signup form */
-  margin: 0 auto; /* Center the form */
-  padding: 20px; /* Add padding around the form */
-  background-color: #f9f9f9; /* Light background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .signup-container h2 {
-  text-align: center; /* Center the heading */
-  color: #4CAF50; /* Primary color for the heading */
+  text-align: center;
+  color: #4CAF50;
 }
 
 .signup-container label {
-  display: block; /* Make labels block elements */
-  margin-bottom: 5px; /* Space between label and input */
-  font-weight: bold; /* Bold labels */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .signup-container input[type="text"],
 .signup-container input[type="email"],
 .signup-container input[type="password"],
 .signup-container select {
-  width: 100%; /* Full width for inputs and select */
-  padding: 10px; /* Padding inside inputs */
-  margin-bottom: 15px; /* Space between fields */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 4px; /* Rounded corners for inputs */
-  font-size: 16px; /* Font size for inputs */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .signup-container button {
-  width: 100%; /* Full width for the button */
-  padding: 10px; /* Padding inside the button */
-  background-color: #4CAF50; /* Primary color for the button */
-  color: white; /* White text color */
-  border: none; /* No border */
-  border-radius: 4px; /* Rounded corners for the button */
-  font-size: 16px; /* Font size for the button */
-  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .signup-container button:hover {
-  background-color: #45a049; /* Darker shade on hover */
+  background-color: #45a049;
 }
 
+/* Upgrade Banner Styles */
+.upgrade-banner {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upgrade-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upgrade-button:hover {
+  background-color: #45a049;
+}
+
+/* Sidebar Content Styles */
+.sidebar-content {
+  margin-top: 10px;
+}
+
+.upgrade-banner {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.upgrade-banner p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.upgrade-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upgrade-button:hover {
+  background-color: #45a049;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard__sidebar {
+  width: 250px;
+}
+
+.dashboard__main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard__main {
+  flex: 1;
+  padding: 20px;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+}
+
+.top-up-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.discount-voucher {
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.category-list .MuiCard-root {
+  width: 150px; /* Adjust width as needed */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Add padding */
+}
+
+.category-list button {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popular-dishes, .recent-orders {
+  margin-bottom: 20px;
+}
+
+.popular-dishes img, .recent-orders img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.popular-dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between cards */
+}
+
+.popular-dishes .MuiCard-root {
+  display: flex;
+  align-items: center; /* Center align items */
+  padding: 10px; /* Add padding */
+}
+
+.popular-dishes ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.popular-dishes li {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center align items vertically */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.popular-dishes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.popular-dishes .MuiCard-root {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
+import Header from './Header';
+
 
 function Contact() {
   return (
     <section className="contact section container" id="contact" style={{ paddingBottom: '100px', marginTop: "90px" }}>
+      <Header />
       <div className="contact__container grid">
         <div className="contact__content">
           <h2 className="section__title-center">Contact Us From <br /> Here</h2>

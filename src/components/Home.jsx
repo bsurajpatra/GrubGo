@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import TermsOfService from './TermsOfService';
+import Header from './Header';
+
 
 function Home() {
   return (
     <>
       <section className="home section container" id="home" style={{ marginTop: "40px" }}>
+        <Header />
         <div className="home__content">
           <div className="home__data">
             <h1 className="home__title">Order Products <br /> Faster Easier</h1>
@@ -28,7 +31,7 @@ function Home() {
             <div className="info-column">
               <h3 className="info-title">Our Company</h3>
               <ul>
-                <li>Blog</li>
+                <li><a href="https://www.youtube.com/watch?v=lwepBTM4ZVE " target="_blank" rel="noopener noreferrer">Vlog</a></li>
                 <li>Our Mission</li>
                 <li><a href="https://www.linkedin.com/pulse/grubgo-community-driven-food-delivery-platform-local-b-suraj-patra-negac" target="_blank" rel="noopener noreferrer">Article</a></li>
               </ul>

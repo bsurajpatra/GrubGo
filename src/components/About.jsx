@@ -1,8 +1,11 @@
 import React from 'react';
+import Header from './Header';
+
 
 function About() {
   return (
     <section className="about section" id="about" style={{ marginTop: "40px" }}>
+      <Header />
       <div className="about__container container grid">
         <div className="about__data">
           <h2 className="about__title">About Us</h2>
